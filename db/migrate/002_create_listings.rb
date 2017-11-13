@@ -6,6 +6,8 @@ class CreateListings < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.float :price
+      t.integer :neighborhood_id
+      t.integer :host_id # special magic here to 
     end
   end
 end

@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 6) do
     t.datetime "checkout"
     t.integer  "listing_id"
     t.integer  "guest_id"
+    t.integer  "host_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(version: 6) do
     t.integer "rating"
     t.integer "reservation_id"
     t.integer "guest_id"
+    t.integer "listing_id"
   end
 
   create_table "users", force: :cascade do |t|
